@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/codeleets/ontologies/2017/4/untitled-ontology-4"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/codeleets/ontologies/2017/4/untitled-ontology-4">
+    <Prefix name="" IRI="http://www.semanticweb.org/codeleets/ontologies/2017/4/untitled-ontology-4#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-4" IRI="http://www.semanticweb.org/codeleets/ontologies/2017/4/untitled-ontology-4#"/>
+    <Declaration>
+        <Class IRI="#Soccer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sports"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Team"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAnInstanceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMatchBetween"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPlayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPlayerOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Goals"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MatchDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MatchLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SportsName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TeamCountry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Messi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RealMadrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RealMadridVsBarcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Soccer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ronaldo"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#RealMadrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Soccer"/>
+        <NamedIndividual IRI="#RealMadridVsBarcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sports"/>
+        <NamedIndividual IRI="#Soccer"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <NamedIndividual IRI="#Barcelona"/>
+        <NamedIndividual IRI="#Messi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <NamedIndividual IRI="#Messi"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <NamedIndividual IRI="#RealMadrid"/>
+        <NamedIndividual IRI="#ronaldo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMatchBetween"/>
+        <NamedIndividual IRI="#RealMadridVsBarcelona"/>
+        <NamedIndividual IRI="#RealMadridVsBarcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAnInstanceOf"/>
+        <NamedIndividual IRI="#Soccer"/>
+        <NamedIndividual IRI="#RealMadridVsBarcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <NamedIndividual IRI="#ronaldo"/>
+        <NamedIndividual IRI="#RealMadrid"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Goals"/>
+        <NamedIndividual IRI="#Barcelona"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Goals"/>
+        <NamedIndividual IRI="#Messi"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Goals"/>
+        <NamedIndividual IRI="#RealMadrid"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#MatchDate"/>
+        <NamedIndividual IRI="#RealMadridVsBarcelona"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1st June 2017</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#MatchLocation"/>
+        <NamedIndividual IRI="#RealMadridVsBarcelona"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Madrid Footbal Ground</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SportsName"/>
+        <NamedIndividual IRI="#Soccer"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Soccer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Goals"/>
+        <NamedIndividual IRI="#ronaldo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <ObjectProperty IRI="#isPlayerOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAnInstanceOf"/>
+        <Class IRI="#Sports"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMatchBetween"/>
+        <Class IRI="#Soccer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAnInstanceOf"/>
+        <Class IRI="#Soccer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMatchBetween"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Goals"/>
+        <Class IRI="#Team"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MatchDate"/>
+        <Class IRI="#Soccer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MatchLocation"/>
+        <Class IRI="#Soccer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SportsName"/>
+        <Class IRI="#Soccer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TeamCountry"/>
+        <Class IRI="#Team"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Goals"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MatchDate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MatchLocation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SportsName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TeamCountry"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
